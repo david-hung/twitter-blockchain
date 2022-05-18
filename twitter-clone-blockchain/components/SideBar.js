@@ -25,7 +25,7 @@ function Sidebar() {
             <div>Home</div>
             <div>Explore</div>
             <div className={style.tweetButton}>Mint</div>
-            <div
+            <div></div>
         </div>
 
     )
