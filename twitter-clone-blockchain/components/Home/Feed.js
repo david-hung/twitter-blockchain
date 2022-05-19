@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react'
 // import { TwitterContext } from '../../context/TwitterContext'
 import TweetBox from './TweetBox'
-// import Post from '../Post'
+import Post from '../Post'
 import { BsStars } from 'react-icons/bs'
 
 const style = {
@@ -20,7 +20,9 @@ function Feed() {
         <BsStars />
       </div>
       <TweetBox />
-
+      {TweetBox.map((tweet, index) => (
+        <Post />
+      ))}
     </div>
   )
 }
